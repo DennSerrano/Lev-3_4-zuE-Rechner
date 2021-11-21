@@ -1,0 +1,117 @@
+//========General===========
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+background-color: rgb(52, 52, 52);  
+}
+//========Header===========
+header{
+    display: flex;
+    justify-content: center;
+    padding:2vh 0;
+    h1{
+        font-size: 6vh;
+        color: #EF9144;
+    }
+}
+//========Main===========
+main{
+    color:aliceblue;
+    display: flex;
+    justify-content: center;
+    form{
+        width: 60%;
+        background-color: rgb(30, 30, 30);
+        border:2px solid black;
+        border-radius:5px;
+        padding:3vh 5vh 0vh 5vh;
+        box-shadow: 12px 12px 10px 9px rgba(0,0,0,0.6);
+        article{
+            padding:2vw 0;
+            border:2px solid #EF9144;
+            input{
+                padding:2vh 10vw;
+                background-color:gray;
+            }
+            label{
+                padding:0 1vw 0 1vw;
+                font-size:20px;
+            }
+        }
+        .button{ 
+        background-color:  #EF9144;;
+        margin:2vh 0 0 10vw;
+        padding:2vh 14vw;
+        font-size:20px;
+        color:white;
+        }
+        div{
+            h3{
+                padding:2vh 0
+            }
+            #gesamt{
+                color:red;
+            }
+        }
+    }
+}
+//========Media Query===========
+@media only screen and (max-width: 600px) {
+    header{
+        h1{
+            font-size:25px;
+        }
+    }
+    main{
+        form{
+            width:80%;
+            article{
+                margin: 0 0 0 13vw;
+                display:flex;
+                flex-wrap:wrap;
+                max-width: 40vw;
+                label{
+                    font-size:15px;
+                }
+                input{
+                    padding: 1vh 5vw;
+                }
+                #einzel{
+                    margin:0 0 0 5.2vw;
+                }
+                #acht{
+                    margin:0 0 0 2.3vw;
+                }
+                #neun{
+                    margin:0 0 0 4.6vw;
+                }
+            }
+            div{
+                #gesamt{
+                color:red;
+                }
+            }
+        }
+    }
+}
+
+// @media only screen and (max-width: 800px) {
+//     main{
+//         form{
+//             width:80%;
+//             article{
+//                 padding: 0s 20vw;;
+//                 margin: 0 0 0 13vw;
+//                 display:flex;
+//                 flex-wrap:wrap;
+//                 max-width: 30vw;
+//                 label{
+//                     font-size:15px;
+//                 }
+//             }
+//         }
+//     }
+// }

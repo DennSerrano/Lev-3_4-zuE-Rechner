@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lev 3_4 zuE Rechner</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+    <!--Header-->
+    <header>
+        <h1>
+            Einkommenssteuer-Rechner
+        </h1>
+    </header>
+    <!--Main-->
+    <main>
+        <!--Form-->
+        <form action="zuERechner" onsubmit="return false">
+            <!--Article 1-->
+            <article>
+                <label for="jahr">Jahr:</label>
+                <!--Auswahl Jahre-->
+                <select name="jahr" id="jahr">
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                </select>
+            </article>
+            <!--Article 2-->
+            <article>
+                <label for="eingabe">zu versteuerndes Einkommen:</label>
+                <!--Einkommen Angabe-->
+                <input type="text" name="eingabe" id="eingabe">
+            </article>
+            <!--Article 3-->
+            <article>
+                <label for="einzel">Art der Veranlagung:</label>
+                <label for="einzel"> Einzelveranlagung</label>
+                <input type="radio" name="art1" id="einzel">
+                <label for="einzel"> Zusammenveranlagung</label>
+                <input type="radio" name="art1" id="zweifach">
+            </article>
+            <!--Article 4-->
+            <article>
+                <label for="acht">Kirchensteuer:</label>
+                <label for="acht"> keine</label>
+                <input type="radio" name="kSteuer" id="none">
+                <label for="acht"> 8% (Bayern,BaWü)</label>
+                <input type="radio" name="kSteuer" id="acht">
+                <label for="acht"> 9% (alle anderen)</label>
+                <input type="radio" name="kSteuer" id="neun">
+            </article>
+            <!--Button-->
+            <input class="button" type="button" value="Berechnen" onclick="berechnen()">
+            <!--Div für Ausgabe-->
+            <div>
+                <h3>Einkommenssteuer</h3>
+                <p id="steuer"></p>
+                <h3>Kirchensteuer</h3>
+                <p id="kSteuer"></p>
+                <h3>Gesamtbelastung</h3>
+                <p id="gesamt"></p>
+            </div>
+        </form>
+    </main>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

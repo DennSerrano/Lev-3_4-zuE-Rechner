@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #343434;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  padding: 2vh 0;
+}
+header h1 {
+  font-size: 6vh;
+  color: #EF9144;
+}
+
+main {
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+}
+main form {
+  width: 60%;
+  background-color: #1e1e1e;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 3vh 5vh 0vh 5vh;
+  box-shadow: 12px 12px 10px 9px rgba(0, 0, 0, 0.6);
+}
+main form article {
+  padding: 2vw 0;
+  border: 2px solid #EF9144;
+}
+main form article input {
+  padding: 2vh 10vw;
+  background-color: gray;
+}
+main form article label {
+  padding: 0 1vw 0 1vw;
+  font-size: 20px;
+}
+main form .button {
+  background-color: #EF9144;
+  margin: 2vh 0 0 10vw;
+  padding: 2vh 14vw;
+  font-size: 20px;
+  color: white;
+}
+main form div h3 {
+  padding: 2vh 0;
+}
+main form div #gesamt {
+  color: red;
+}
+
+@media only screen and (max-width: 600px) {
+  header h1 {
+    font-size: 25px;
+  }
+
+  main form {
+    width: 80%;
+  }
+  main form article {
+    margin: 0 0 0 13vw;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 40vw;
+  }
+  main form article label {
+    font-size: 15px;
+  }
+  main form article input {
+    padding: 1vh 5vw;
+  }
+  main form article #einzel {
+    margin: 0 0 0 5.2vw;
+  }
+  main form article #acht {
+    margin: 0 0 0 2.3vw;
+  }
+  main form article #neun {
+    margin: 0 0 0 4.6vw;
+  }
+  main form div #gesamt {
+    color: red;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
